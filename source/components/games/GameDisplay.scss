@@ -1,0 +1,63 @@
+.GameList--display {
+  
+  margin: 8% 0 0 8%; 
+  
+  h1 {
+    font-size: 7em;
+    font-style: italic;
+    font-family: Roboto;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: .02em black;
+    margin-bottom: -0.05em;
+  }
+
+  p {
+    width: 100%;
+    height: 2em;
+    color: #1a314c;
+    font-family: Roboto;
+    font-weight: bold;
+    text-align: center;
+    font-size: larger;
+    text-transform: capitalize;
+  }
+
+  .col {
+
+  }
+
+  .portrait {
+    font-size: 1em;
+    position: relative;
+    background: #d1dfef;
+    background: -webkit-radial-gradient(center, ellipse cover,  #d1dfef 0%,#84aad5 100%);
+    border: solid 0.25em black;
+    width: 9em;
+    height: auto;
+    float: left;
+  }
+
+  .portrait img {
+    display: block;
+    margin: auto;
+    padding-top: 1em;	
+  }
+
+  .portrait:hover {
+     border:solid .25em white; 
+     box-shadow: 0px 0px 25px #fff;
+     z-index: 2;
+     -webkit-transition: all 100ms;
+     -webkit-transform: scale(1.2);
+     transition: all 100ms;
+     transform: scale(1.2);
+  }
+
+  .feature-container {
+  	position: relative;
+  	text-align: center;
+  	padding-top: 8px;
+  }
+}

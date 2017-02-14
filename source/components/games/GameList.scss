@@ -5,3 +5,47 @@
     text-align: center;
     margin-top: 30px;
 }
+
+.GameList--start {
+	$menu-height: 50px;
+	$windows-cursor: url('data:image/x-icon;base64,AAACAAEAICACAAIABAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAHAAAABwAAAA4AAAAOAAAAHAAAABwAAAQ4AAAGOAAAB3AAAAfwAAAH/4AAB/8AAAf+AAAH/AAAB/gAAAfwAAAH4AAAB8AAAAeAAAAHAAAABgAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////////////////+P////B////wf///4P///+D///fB///zwf//8YP///CD///wB///8AAf//AAP//wAH//8AD///AB///wA///8Af///AP///wH///8D////B////w////8f////P////3/////////////////////////8='), auto;
+
+
+	.start {
+	  background-color: #b6bbb7;
+	  height: $menu-height;
+	  width: 100%;
+	  position: fixed;
+	  bottom: 0;
+	  z-index: 1;
+	  box-shadow: 0px 0px 0px 2px #f7f9f6, 0px 0px 0px 4px #d5dad6;
+	  padding: 0 6px;
+	  display: flex;
+	  align-items: center;
+	}
+
+	.start__button {
+	  $button-height: $menu-height - 16px;
+	  font-size: $button-height;
+	  height: $button-height;
+	  display: inline-block;
+	  line-height: 1.25em;
+	  padding: 4px;
+	  box-shadow: 1px 1px 0px 1px #808080, 2px 2px 0px 2px #000, -1px -1px 0px 1px #fff;
+	  vertical-align: middle;
+	  user-select: none;
+	  cursor: default;
+	  
+	  &:active {
+	    box-shadow: 1px 1px 0px 1px #808080, 2px 2px 0px 2px #fff, -1px -1px 0px 1px #000;
+	  }
+	}
+
+	.start__icon {
+	  transform: translateY(-20%);
+	}
+}
+
+.GameList--loader {
+  transform: translateY(100%);
+}

@@ -12,7 +12,7 @@ export function initGlobals() {
     config = new Config();
     store = createStore<GlobalState>(
         combineReducers<GlobalState>({
-            games: gamesReducer,
+            games: gamesReducer
         }),
         applyMiddleware(thunk)
     );

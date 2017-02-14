@@ -1,19 +1,31 @@
 // Fonts
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto:900i|VT323');
 
 // Global styles
 
+* {
+	cursor: crosshair;	
+}
+
 body {
-    font-family: 'Open Sans';
+  	font-family: 'VT323', monospace;
     font-size: 14px;
-    background: #efefef;
+    background-image: url('http://res.cloudinary.com/hammerjah/image/upload/v1469394470/overwatch/latest.jpg');
+}
+
+p {
+	color: white;
 }
 
 h1, h2 {
+	color: white;
     font-weight: normal;
 }
 
 // Component imports
 
 @import '../components/games/GameList';
+@import '../components/games/GameLoader';
+@import '../components/games/GameDisplay';
+@import '../components/games/GameDetails';

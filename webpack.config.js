@@ -15,6 +15,9 @@ module.exports = {
     devtool: 'source-map',
     resolve: {
         extensions: ['', '.js', '.ts', '.tsx', '.webpack.js', '.web.js'],
+        alias: {
+            'jquery-ui': './node_modules/jquery-ui-bundle/jquery-ui.js'
+        }
     },
     module: {
         loaders: [
@@ -24,5 +27,9 @@ module.exports = {
     },
     plugins: [
         new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js'),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        })
     ],
 };

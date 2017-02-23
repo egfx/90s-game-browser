@@ -1,8 +1,8 @@
 import { template } from "lodash";
 
 export class Config {
-    gamesDataURL = "https://clientupdate-v6.cursecdn.com/Feed/games/v10/games.json";
-    gameIconURLTemplate = template("https://clientupdate-v6.cursecdn.com/GameAssets/<%= gameID %>/Icon64.png");
+    gamesDataURL = "client.json";
+    gameIconURLTemplate = template("client/<%= gameID %>/Icon64.png");
     gameKeys = ['Id', 'Name', 'SupportsAddons', 'SupportsVoice', 'order', 'Slug', 'fileName', 'section', 'icon'];
     fetchStartingMsg = "Fetching the games data!";
     fetchErrorMsg = "There was an error with the fetching of the games data!";

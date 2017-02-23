@@ -1,7 +1,7 @@
 {
   "name": "ventura",
   "version": "1.0.0",
-  "description": "Curse React Test",
+  "description": "",
   "main": "index.html",
   "scripts": {
     "start": "node --expose-gc --max_old_space_size=4096 ./node_modules/gulp/bin/gulp",

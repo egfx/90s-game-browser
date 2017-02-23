@@ -24,7 +24,7 @@ describe('Curse Game Testing', () => {
   describe('Fetching Game Data', () => {
 
       type testEndPoint: String
-      const testEndPoint = "https://clientupdate-v6.cursecdn.com/Feed/games/v10/games.json"
+      const testEndPoint = "client.json"
       
       function fetchGamesSucceeded(data): FetchGamesSucceeded { 
               return { type: FETCH_GAMES_SUCCEEDED, items: data }

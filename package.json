@@ -34,7 +34,7 @@
     "redux": "^3.6.0",
     "redux-thunk": "^2.1.0",
     "whatwg-fetch": "^2.0.1",
-    "jquery": "v3.1.1",
+    "jquery": "v3.5.0",
     "jquery-ui-bundle": "^1.11.4"
   },
   "devDependencies": {
